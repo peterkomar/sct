@@ -1,0 +1,383 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>PropertiesMain</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>PropertiesMain</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>445</width>
+            <height>310</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>445</width>
+            <height>310</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>445</width>
+            <height>310</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Properties</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>CloseBtn</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>270</y>
+                <width>98</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Cl&amp;ose</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>FinishBtn</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>340</x>
+                <y>270</y>
+                <width>91</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Fi&amp;nish</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>rootSelect</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>90</x>
+                <y>100</y>
+                <width>100</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="editable">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>cmdLine</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>91</x>
+                <y>140</y>
+                <width>330</width>
+                <height>23</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>selectInitRd</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>91</x>
+                <y>230</y>
+                <width>330</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="editable">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel12</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>180</y>
+                <width>70</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Video</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel11</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>70</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Add</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel10</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>100</y>
+                <width>70</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Root</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel9</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>70</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Image</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel8</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>70</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Label</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel13</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>230</y>
+                <width>70</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>initrd</string>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>LabelEdit</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>91</x>
+                <y>20</y>
+                <width>320</width>
+                <height>23</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <property name="name">
+            <cstring>selectImage</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>91</x>
+                <y>60</y>
+                <width>320</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="editable">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>checkMain</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>260</x>
+                <y>100</y>
+                <width>110</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>set de&amp;fault</string>
+        </property>
+        <property name="accel">
+            <string>Alt+F</string>
+        </property>
+    </widget>
+    <widget class="QComboBox">
+        <item>
+            <property name="text">
+                <string>1600x1200 16 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1600x1200 8 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1280x1024 24 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1280x1024 16 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1280x1024 8 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1024x768 24 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1024x768 16 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>1024x768 8 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>800x600 24 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>800x600 16 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>800x600 8 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>640x480 24 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>640x480 16 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>640x480 8 bit</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>text 80x25</string>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>text 80x60</string>
+            </property>
+        </item>
+        <property name="name">
+            <cstring>selectMode</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>90</x>
+                <y>180</y>
+                <width>160</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="currentItem">
+            <number>8</number>
+        </property>
+        <property name="sizeLimit">
+            <number>10</number>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>CloseBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>PropertiesMain</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>FinishBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>PropertiesMain</receiver>
+        <slot>slotFinish()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>LabelEdit</tabstop>
+    <tabstop>selectImage</tabstop>
+    <tabstop>rootSelect</tabstop>
+    <tabstop>cmdLine</tabstop>
+    <tabstop>selectMode</tabstop>
+    <tabstop>selectInitRd</tabstop>
+    <tabstop>FinishBtn</tabstop>
+    <tabstop>CloseBtn</tabstop>
+</tabstops>
+<slots>
+    <slot>slotFinish()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

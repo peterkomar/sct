@@ -1,0 +1,468 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>lilo_view</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>lilo_view</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>728</width>
+            <height>550</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>728</width>
+            <height>469</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>lilo config</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextEdit" row="0" column="0">
+            <property name="name">
+                <cstring>helpLabel</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>200</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>300</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="focusPolicy">
+                <enum>NoFocus</enum>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QToolBox" row="0" column="1">
+            <property name="name">
+                <cstring>toolBox1</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>500</width>
+                    <height>400</height>
+                </size>
+            </property>
+            <property name="currentIndex">
+                <number>2</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Main</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Main Config</string>
+                </attribute>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel5</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>11</y>
+                            <width>236</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Device boot:</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <property name="name">
+                        <cstring>selDev</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>32</y>
+                            <width>236</width>
+                            <height>22</height>
+                        </rect>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel5_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>60</y>
+                            <width>236</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Pause:</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>disbTimer</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>109</y>
+                            <width>236</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>disa&amp;ble timer</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer17</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>185</height>
+                        </size>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>119</x>
+                            <y>135</y>
+                            <width>20</width>
+                            <height>185</height>
+                        </rect>
+                    </property>
+                </spacer>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel6</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>253</x>
+                            <y>81</y>
+                            <width>236</width>
+                            <height>22</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>seconds</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>selPause</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>80</y>
+                            <width>220</width>
+                            <height>22</height>
+                        </rect>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Boot_menu</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Boot menu config</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QListView" row="0" column="0" rowspan="1" colspan="3">
+                        <column>
+                            <property name="text">
+                                <string>Name OS</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Type OS</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>default</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <property name="name">
+                            <cstring>listOS</cstring>
+                        </property>
+                        <property name="allColumnsShowFocus">
+                            <bool>false</bool>
+                        </property>
+                        <property name="showSortIndicator">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizeMode">
+                            <enum>AllColumns</enum>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="0">
+                        <property name="name">
+                            <cstring>addBtn</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;add new</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="2">
+                        <property name="name">
+                            <cstring>delBtn</cstring>
+                        </property>
+                        <property name="text">
+                            <string>remove</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="1">
+                        <property name="name">
+                            <cstring>editBtn</cstring>
+                        </property>
+                        <property name="text">
+                            <string>edit</string>
+                        </property>
+                    </widget>
+                    <spacer row="1" column="1">
+                        <property name="name">
+                            <cstring>spacer19</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Minimum</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>15</width>
+                                <height>8</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>themes</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Themes</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="1">
+                        <property name="name">
+                            <cstring>pixTheme</cstring>
+                        </property>
+                        <property name="scaledContents">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QListBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>listThemes</cstring>
+                        </property>
+                    </widget>
+                    <spacer row="1" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>spacer6</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>40</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBar</cstring>
+    </property>
+    <item text="Lilo" name="Lilo">
+        <separator/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <action name="helpIndexAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>lilo_view</receiver>
+        <slot>fileExit()</slot>
+    </connection>
+    <connection>
+        <sender>helpIndexAction</sender>
+        <signal>activated()</signal>
+        <receiver>lilo_view</receiver>
+        <slot>helpIndex()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>lilo_view</receiver>
+        <slot>helpAbout()</slot>
+    </connection>
+    <connection>
+        <sender>addBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>lilo_view</receiver>
+        <slot>slotAddNewItem()</slot>
+    </connection>
+    <connection>
+        <sender>editBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>lilo_view</receiver>
+        <slot>slotEditItem()</slot>
+    </connection>
+    <connection>
+        <sender>delBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>lilo_view</receiver>
+        <slot>slotRemoveItem()</slot>
+    </connection>
+    <connection>
+        <sender>toolBox1</sender>
+        <signal>currentChanged(int)</signal>
+        <receiver>lilo_view</receiver>
+        <slot>slotChangeTabs(int)</slot>
+    </connection>
+    <connection>
+        <sender>disbTimer</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>selPause</receiver>
+        <slot>setDisabled(bool)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>fileExit()</slot>
+    <slot>helpIndex()</slot>
+    <slot>helpAbout()</slot>
+    <slot>slotSetParameter()</slot>
+    <slot>slotRemoveItem()</slot>
+    <slot>slotEditItem( )</slot>
+    <slot>slotAddNewItem()</slot>
+    <slot>slotChangeTabs(int )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

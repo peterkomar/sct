@@ -1,0 +1,217 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>info_panel</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>info_panel</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>505</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Info</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <spacer row="0" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>578</width>
+                    <height>0</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QTabWidget" row="1" column="0">
+            <property name="name">
+                <cstring>InfoBar</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>desk</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Description</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>552</width>
+                                <height>0</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QTextEdit">
+                        <property name="name">
+                            <cstring>desc</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                        <property name="textFormat">
+                            <enum>RichText</enum>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Files</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Contents</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTextEdit" row="1" column="0">
+                        <property name="name">
+                            <cstring>out_files</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                        <property name="textFormat">
+                            <enum>RichText</enum>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <spacer row="0" column="0">
+                        <property name="name">
+                            <cstring>spacer3</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>40</width>
+                                <height>0</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>chlog</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Change Log</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <spacer row="0" column="0">
+                        <property name="name">
+                            <cstring>spacer4</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>552</width>
+                                <height>0</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QTextEdit" row="1" column="0">
+                        <property name="name">
+                            <cstring>out_chlog</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>deppends</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Depends</string>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <spacer>
+                        <property name="name">
+                            <cstring>spacer5</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>40</width>
+                                <height>0</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QTextEdit">
+                        <property name="name">
+                            <cstring>out_deppends</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                        <property name="textFormat">
+                            <enum>RichText</enum>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

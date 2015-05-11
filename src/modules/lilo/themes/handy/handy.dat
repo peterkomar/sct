@@ -1,0 +1,4 @@
+bitmap=/boot/handy.bmp
+bmp-colors=38,68,53,112,38,25
+bmp-table=114p,347p,2,7
+bmp-timer=470p,336p,25,0,11

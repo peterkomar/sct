@@ -1,0 +1,4 @@
+bitmap=/boot/pinguin.bmp
+bmp-colors=,,53,15,,25
+bmp-table=38p,159p,1,7
+bmp-timer=515p,340p,15,100,15

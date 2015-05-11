@@ -1,0 +1,322 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>findDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>findDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>346</width>
+            <height>392</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>150</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Find</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout11</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>&lt;font size="+1"&gt;&lt;u&gt;Find&lt;/u&gt;&lt;/font&gt;</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="1" column="2">
+                    <property name="name">
+                        <cstring>FindBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Find</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer row="0" column="1">
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>203</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QComboBox" row="1" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>find_line</cstring>
+                    </property>
+                    <property name="autoMask">
+                        <bool>true</bool>
+                    </property>
+                    <property name="editable">
+                        <bool>true</bool>
+                    </property>
+                    <property name="insertionPolicy">
+                        <enum>AfterCurrent</enum>
+                    </property>
+                    <property name="autoCompletion">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <spacer row="4" column="0">
+            <property name="name">
+                <cstring>spacer6</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QGroupBox" row="3" column="0">
+            <property name="name">
+                <cstring>find_in</cstring>
+            </property>
+            <property name="title">
+                <string>Find in</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout6</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>f_name</cstring>
+                            </property>
+                            <property name="text">
+                                <string>name</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>f_description</cstring>
+                            </property>
+                            <property name="text">
+                                <string>description</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>f_summary</cstring>
+                            </property>
+                            <property name="text">
+                                <string>summary</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <spacer row="0" column="1">
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+            </grid>
+        </widget>
+        <widget class="QButtonGroup" row="1" column="0">
+            <property name="name">
+                <cstring>selectBtn</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>100</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="title">
+                <string>That find</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>wat's find</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>&lt;i&gt;Select wat's find file or package &lt;/i&gt;</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>pacageBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Package</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>fileBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>File</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout16</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>f_absolutely</cstring>
+                    </property>
+                    <property name="text">
+                        <string>absolutely coincide</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>f_cmp_case</cstring>
+                    </property>
+                    <property name="text">
+                        <string>compare no case</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>selectBtn</sender>
+        <signal>clicked(int)</signal>
+        <receiver>findDlg</receiver>
+        <slot>slotSelect(int)</slot>
+    </connection>
+    <connection>
+        <sender>FindBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>findDlg</receiver>
+        <slot>slotFind()</slot>
+    </connection>
+    <connection>
+        <sender>pacageBtn</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>find_in</receiver>
+        <slot>setShown(bool)</slot>
+    </connection>
+    <connection>
+        <sender>FindBtn</sender>
+        <signal>pressed()</signal>
+        <receiver>findDlg</receiver>
+        <slot>slotFind()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>find_line</tabstop>
+    <tabstop>FindBtn</tabstop>
+    <tabstop>pacageBtn</tabstop>
+    <tabstop>f_absolutely</tabstop>
+    <tabstop>f_cmp_case</tabstop>
+    <tabstop>f_name</tabstop>
+    <tabstop>f_description</tabstop>
+    <tabstop>f_summary</tabstop>
+</tabstops>
+<slots>
+    <slot>slotFind()</slot>
+    <slot>slotSelect(int )</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

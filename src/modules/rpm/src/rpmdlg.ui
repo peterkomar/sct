@@ -1,0 +1,306 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>rpm_dlg</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>rpm_dlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>787</width>
+            <height>729</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>rpm</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="1">
+            <property name="name">
+                <cstring>layout7</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout6</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>countLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Count</string>
+                            </property>
+                        </widget>
+                        <widget class="QProgressBar">
+                            <property name="name">
+                                <cstring>total_progress</cstring>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QLayoutWidget" row="0" column="0">
+                    <property name="name">
+                        <cstring>layout5</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>curLabel</cstring>
+                            </property>
+                            <property name="text">
+                                <string>item</string>
+                            </property>
+                        </widget>
+                        <widget class="QProgressBar">
+                            <property name="name">
+                                <cstring>current_progress</cstring>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QTextEdit" row="0" column="0" rowspan="5" colspan="1">
+            <property name="name">
+                <cstring>helpTxt</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>250</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>250</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="focusPolicy">
+                <enum>NoFocus</enum>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="4" column="1">
+            <property name="name">
+                <cstring>layout11</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>rpmBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Install/Remove</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer7</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cnacel</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer row="2" column="1">
+            <property name="name">
+                <cstring>spacer6</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>505</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QButtonGroup" row="3" column="1">
+            <property name="name">
+                <cstring>selectOpt</cstring>
+            </property>
+            <property name="title">
+                <string>select options</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>b_selected</cstring>
+                    </property>
+                    <property name="text">
+                        <string>selected</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>bAll</cstring>
+                    </property>
+                    <property name="text">
+                        <string>all</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QTabWidget" row="1" column="1">
+            <property name="name">
+                <cstring>tab_log</cstring>
+            </property>
+            <property name="tabPosition">
+                <enum>Bottom</enum>
+            </property>
+            <property name="tabShape">
+                <enum>Triangular</enum>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Log</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QTextEdit" row="0" column="0">
+                        <property name="name">
+                            <cstring>log_txt</cstring>
+                        </property>
+                        <property name="focusPolicy">
+                            <enum>NoFocus</enum>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <spacer row="1" column="0">
+                        <property name="name">
+                            <cstring>spacer3</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>40</width>
+                                <height>0</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Advertisement</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0">
+                        <property name="name">
+                            <cstring>textLabel1</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>GroupBoxPanel</enum>
+                        </property>
+                        <property name="text">
+                            <string>&lt;center&gt;&lt;font color="#3388ff" size="+2"&gt;Here maybe your advertisement :-)&lt;/font&gt;&lt;/center&gt;</string>
+                        </property>
+                    </widget>
+                    <spacer row="1" column="0">
+                        <property name="name">
+                            <cstring>spacer4</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>40</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>selectOpt</sender>
+        <signal>clicked(int)</signal>
+        <receiver>rpm_dlg</receiver>
+        <slot>slot_rem_mode(int)</slot>
+    </connection>
+    <connection>
+        <sender>selectOpt</sender>
+        <signal>pressed(int)</signal>
+        <receiver>rpm_dlg</receiver>
+        <slot>slot_rem_mode(int)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>slot_rem_mode(int )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>4.  Description of the module of SCT rpm</title>
+<link rel="stylesheet" href="../images/book.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.1">
+<link rel="start" href="index.html" title="SCT user guide">
+<link rel="up" href="sct_lilo.html" title="Chapter 2.  Description of the modules">
+<link rel="prev" href="sct_dm.html" title="3. Description module of SCT dm">
+<link rel="next" href="pr03.html" title="Developers">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">4.  Description of the module of SCT rpm</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="sct_dm.html"><img src="../images/prev.png" alt="Prev"></a> </td>
+<th width="60%" align="center">Chapter 2.  Description of the modules</th>
+<td width="20%" align="right"> <a accesskey="n" href="pr03.html"><img src="../images/next.png" alt="Next"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="sct_rpm"></a>4.  Description of the module of SCT rpm</h3></div></div></div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497970"></a>4.1. Short</h4></div></div></div>
+<p>SCT rpm is a manager of packages. Intended for work with rpm packages.</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497980"></a>4.2. Description of SCT rpm.</h4></div></div></div>
+<p>Package manager of SCT rpm
+					The groups of bales are placed in the left panel of manager, at the choice of concrete group of bales bales which belong to this group will be represented in right overhead part. At the choice of concrete bale down in pracilia of panel information will be represented about this bale.
+					Accessible operations which can be conducted above bales accessible in the menu of 
+<span><strong class="command">rpm</strong></span> :
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					<span><strong class="command">install</strong></span> is installation of the chosen packages.
+				               </p></li>
+<li><p>
+						<span><strong class="command">remove</strong></span> is a delete of the chosen packages.
+				                </p></li>
+<li><p>
+						<span><strong class="command">find</strong></span> is a search of the chosen packages.
+						</p></li>
+<li><p>
+					<span><strong class="command">edit source</strong></span> – the manager of sources loads. (details see a section 
+Manager of sources)
+						</p></li>
+</ul></div>
+<p>
+			
+					There are commands in the menu of <span><strong class="command">view</strong></span>:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+						<span><strong class="command">installed packages</strong></span> – to show all the packages are set.
+						</p></li>
+<li><p>
+						<span><strong class="command">not installed packages</strong></span> – to show all the packages are not set.
+						</p></li>
+<li><p>
+							<span><strong class="command">update</strong></span> – update information about packages, to take off a selection from all packages.
+						</p></li>
+</ul></div>
+<p>
+				</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498090"></a>4.3. Set and delete of packages.</h4></div></div></div>
+<p>
+					That to set the chosen packages it is necessary to choose a command <span><strong class="command">rpm/install</strong></span> (<span><strong class="command">rpm/remove</strong></span> – if case of delete), or push the button of <span><strong class="command">install</strong></span> (in the case install) or <span><strong class="command">remove</strong></span> (in the case of delete) down on the toolbar. Master of install will be loaded.
+				</p>
+<p>
+					The program automatically will check up dependences of the packages chosen by you and will add those which were not chosen by you, however, which are needed for satisfaction of dependences of the chosen packages. Packages are chosen by you will finds' in the section of <span><strong class="command">selected packages</strong></span> added the program in the section of <span><strong class="command">additional packages</strong></span>.
+					</p>
+<div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Important">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Important]" src="../images/important.png"></td>
+<th align="left">Important</th>
+</tr>
+<tr><td align="left" valign="top">program conducts a search only in the indicated sources (<a href="">div section of certificate manager of source</a>)</td></tr>
+</table></div>
+<p>.
+					In case if the program will add packages, a section will appear the Additional packages, two variants will be offered to you:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+							to set(to delete) all – packages will be set(remote) indicated in sections chosen and additional.
+						</p></li>
+<li><p>
+							to set(to delete) only chosen – packages which are indicated in a section Chosen will be set(remote), in this case there can be negative consequences (and can be not): some programs can be not loaded, or work incorrectly, in the case of delete the choice of this option can lead to collapse of the operating system.
+						</p></li>
+</ul></div>
+<p>
+					</p>
+<div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Important">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Important]" src="../images/important.png"></td>
+<th align="left">Important</th>
+</tr>
+<tr><td align="left" valign="top"> that near every bale a mark stood in a report – it is completed, it means that dependences are decided, if not it means that the program was not able to find a necessary package, or file in a source, to satisfy dependences. At that rate you must find a package is needed and to add in a source and repeat installation. you also can ignore it and prolong establishment, but then you will add the system a risk described higher.</td></tr>
+</table></div>
+<p>
+				</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498189"></a>4.4. Find packages</h4></div></div></div>
+<p>To find a package or file it is necessary to choose a command <span><strong class="command">Rpm/Find</strong></span>, to push the button of <span><strong class="command">find</strong></span> on the toolbar. In the field of enter the name of package or file it is then necessary to choose a type: that it is needed to find a package, whether a file is in a package, and to push the button of <span><strong class="command">find</strong></span>. Also accessible options: absolute coinciding, with an account a register; search in: name, description, result.</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498215"></a>4.5. Source manages.</h4></div></div></div>
+<p>
+					You can execute various operations with sources. A source is this place (folder, cd, dvd) where rpm packages are. Accessible next operations of addition, delete, editing, renewal.
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li>
+					Addition is addition of new source.
+						</li>
+<li>
+					Delete is a delete of existent source.
+						</li>
+<li>
+					Editing is a change of the name of existent source, or to the way where it is.
+						</li>
+<li>
+							Update – if you to the source (for example, to the catalogue ) added new packages or deleted about it it is needed to report manager of sources, choosing a necessary source and 
+pushing the button to renew.
+						</li>
+</ul></div>
+<p>
+					To save information about added, remote or press the renewed sources button of <span><strong class="command">save</strong></span>, if no - <span><strong class="command">discard</strong></span>.
+				</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498265"></a>4.6. Wizard addition and editing of source</h4></div></div></div>
+<p>Enter name of source (choose on own discretion), option of <span><strong class="command">cd/dvd</strong></span>set on te that this source is  Cd/dvd by a disk. In <span><strong class="command">path source</strong></span> specify where packages are. Push button of <span><strong class="command">next</strong></span>, to begin the process of addition. Given about the added sources going in the file of <code class="filename">sct/share/heder.xml</code>.</p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="sct_dm.html"><img src="../images/prev.png" alt="Prev"></a> </td>
+<td width="20%" align="center"><a accesskey="u" href="sct_lilo.html"><img src="../images/up.png" alt="Up"></a></td>
+<td width="40%" align="right"> <a accesskey="n" href="pr03.html"><img src="../images/next.png" alt="Next"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">3. Description module of SCT dm </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="../images/home.png" alt="Home"></a></td>
+<td width="40%" align="right" valign="top"> Developers</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

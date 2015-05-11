@@ -1,0 +1,4 @@
+bitmap=/boot/80t.bmp
+bmp-colors=,,53,15,,25
+bmp-table=390p,47p,1,7
+bmp-timer=460p,443p,15,100,15

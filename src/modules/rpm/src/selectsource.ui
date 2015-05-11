@@ -1,0 +1,326 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>EditSource</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>EditSource</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>728</width>
+            <height>649</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Source manager</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="spacing">
+            <number>13</number>
+        </property>
+        <widget class="QTextEdit" row="0" column="0" rowspan="3" colspan="1">
+            <property name="name">
+                <cstring>helpTxt</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>250</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>250</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="focusPolicy">
+                <enum>NoFocus</enum>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <spacer row="1" column="1">
+            <property name="name">
+                <cstring>spacer9</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>40</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLayoutWidget" row="2" column="1">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="spacing">
+                    <number>187</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>YesBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Save</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>CancelBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Discard</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="1">
+            <property name="name">
+                <cstring>layout5</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton" row="2" column="3">
+                    <property name="name">
+                        <cstring>updateBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Update</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Update selected Source</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="2" column="4">
+                    <property name="name">
+                        <cstring>b_status</cstring>
+                    </property>
+                    <property name="text">
+                        <string>on/off</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="2" column="2">
+                    <property name="name">
+                        <cstring>editBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Edit ...</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Edit select source</string>
+                    </property>
+                </widget>
+                <widget class="QListView" row="0" column="0" rowspan="1" colspan="5">
+                    <column>
+                        <property name="text">
+                            <string>Source Name</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Path</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>CD/DVD</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Status</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>listSrc</cstring>
+                    </property>
+                    <property name="allColumnsShowFocus">
+                        <bool>true</bool>
+                    </property>
+                    <property name="resizeMode">
+                        <enum>AllColumns</enum>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="2" column="1">
+                    <property name="name">
+                        <cstring>removeBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Remove</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Remove selected source</string>
+                    </property>
+                </widget>
+                <spacer row="1" column="0" rowspan="1" colspan="5">
+                    <property name="name">
+                        <cstring>spacer5_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>441</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="2" column="0">
+                    <property name="name">
+                        <cstring>addBtn</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Add ...</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Added new source</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>CancelBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>updateBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>slotUpdateBtn()</slot>
+    </connection>
+    <connection>
+        <sender>addBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>slotAdd()</slot>
+    </connection>
+    <connection>
+        <sender>removeBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>slotRemove()</slot>
+    </connection>
+    <connection>
+        <sender>editBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>slotEdit()</slot>
+    </connection>
+    <connection>
+        <sender>YesBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>slotYes()</slot>
+    </connection>
+    <connection>
+        <sender>b_status</sender>
+        <signal>clicked()</signal>
+        <receiver>EditSource</receiver>
+        <slot>change_status()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>listSrc</tabstop>
+    <tabstop>addBtn</tabstop>
+    <tabstop>removeBtn</tabstop>
+    <tabstop>editBtn</tabstop>
+    <tabstop>updateBtn</tabstop>
+    <tabstop>YesBtn</tabstop>
+    <tabstop>CancelBtn</tabstop>
+</tabstops>
+<slots>
+    <slot>slotUpdateBtn()</slot>
+    <slot>slotEdit()</slot>
+    <slot>slotRemove()</slot>
+    <slot>slotAdd()</slot>
+    <slot>slotYes()</slot>
+    <slot>change_status()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

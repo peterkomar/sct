@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>4. Опис модуля SCT rpm</title>
+<link rel="stylesheet" href="../images/book.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.1">
+<link rel="start" href="index.html" title="Посібник користувача SCT">
+<link rel="up" href="sct_lilo.html" title="Розділ 2. Опис модулів">
+<link rel="prev" href="sct_dm.html" title="3. Опис модуля SCT dm">
+<link rel="next" href="pr03.html" title="Автори.">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">4.  Опис модуля SCT rpm</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="sct_dm.html"><img src="../images/prev.png" alt="назад"></a> </td>
+<th width="60%" align="center">Розділ 2.  Опис модулів </th>
+<td width="20%" align="right"> <a accesskey="n" href="pr03.html"><img src="../images/next.png" alt="далі"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="sct_rpm"></a>4.  Опис модуля SCT rpm</h3></div></div></div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498165"></a>4.1. Коротко</h4></div></div></div>
+<p>Менеджер пакетів SCT rpm – менеджер пакетів(поки що бета версія). Призначений для роботи із rpm пакетами.</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498177"></a>4.2. Опис SCT rpm.</h4></div></div></div>
+<p>Менеджер пакунків SCT rpm
+					В лівій панелі менеджера розміщені групи пакунків, при виборі конкретної групи пакунків в правій верхній частині відобразяться пакунки, які належать до даної групи. При виборі конкретного пакунка внизу в правій панелі відобразиться інформація про даний пакунок.
+					Доступні операції, які можна проводити над пакунками доступні в меню <span><strong class="command">Rpm</strong></span> :
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					<span><strong class="command">Install</strong></span> – інсталяція вибраних пакунків.
+				               </p></li>
+<li><p>
+					<span><strong class="command">Remove</strong></span> – видалення вибраних пакунків.
+				                </p></li>
+<li><p>
+					<span><strong class="command">Find</strong></span> – пошук вибраних пакунків.
+						</p></li>
+<li><p>
+					<span><strong class="command">Edit source</strong></span> – завантажує менеджер джерел. (деталі див. розділ Менеджер джерел)
+						</p></li>
+</ul></div>
+<p>
+			
+					В меню <span><strong class="command">View</strong></span> знаходяться команди:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					<span><strong class="command">Installed packages</strong></span> – показати всі встановлені пакунки.
+						</p></li>
+<li><p>
+					<span><strong class="command">Not installed packages</strong></span> – показати всі не встановлені пакунки.
+						</p></li>
+<li><p>
+					<span><strong class="command">Update</strong></span> – перечитати інформацію про пакунки, зняти виділення із усіх пакунків.
+						</p></li>
+</ul></div>
+<p>
+				</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498311"></a>4.3. Встановлення та видалення пакунків.</h4></div></div></div>
+<p>
+					Що встановити вибрані пакунки необхідно вибрати команду <span><strong class="command">Rpm/Install</strong></span> (<span><strong class="command">Rpm/Remove</strong></span> – eу випадку видалення), або натиснути кнопку <span><strong class="command">install</strong></span> (у випадку встановлення)або <span><strong class="command">Remove</strong></span> (у випадку видалення) внизу на панелі інструментів. Завантажиться майстер встановлення.
+				</p>
+<p>
+					Програма автоматично перевірить залежності вибраних вами пакунків і додасть ті, які не були вибрані вами, однак, які необхідні для задоволення залежностей вибраних пакунків. Пакети вибрані вами будуть знаходитись у розділі <span><strong class="command">Selected packages</strong></span> додані програмою в розділі <span><strong class="command">Additional packages</strong></span>. 
+					</p>
+<div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Important">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Важливо]" src="../images/important.png"></td>
+<th align="left">Важливо</th>
+</tr>
+<tr><td align="left" valign="top">Програма проводить пошук лише у вказаних джерелах (<a href="sct_rpm.html#manager_src" title="4.5. Менеджер джерел.">див розділ довідки менеджер джерел</a>)</td></tr>
+</table></div>
+<p>.
+					У випадку, якщо програма додасть пакунки, появиться розділ Додаткові пакунки, вам буде запропоновано два варіанти:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					встановити(видалити) всі – будуть встановлені(видалені) пакунки вказані у розділах вибрані і додаткові.
+						</p></li>
+<li><p>
+					встановити(видалити) лише вибрані – будуть встановлені(видалені) пакунки, які вказані в розділі Вибрані, в даному випадку можуть бути негативні наслідки (а можуть і не бути): деякі програми можуть не завантажуватись, або працювати невірно, у випадку видалення вибір цієї опції може призвести до краху операційної системи.
+						</p></li>
+</ul></div>
+<p>
+					</p>
+<div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Important">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Важливо]" src="../images/important.png"></td>
+<th align="left">Важливо</th>
+</tr>
+<tr><td align="left" valign="top">Важливо щоб біля кожного пакунка у звіті стояла відмітка – завершено, це означає, що залежності вирішені, якщо ж ні то це означає що програма не змогла знайти потрібний пакунок, або файл в джерелі, щоб задовольнити залежності. В такому разі вам необхідно знайти самому потрібний пакунок і додати в джерело і повторити інсталяцію. Ви також можете проігнорувати це і продовжити встановлення, але тоді ви піддасте свою систему ризику описаному вище.</td></tr>
+</table></div>
+<p>
+				</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2496707"></a>4.4. Пошук пакунків</h4></div></div></div>
+<p>Щоб знайти пакунок або файл необхідно вибрати команду <span><strong class="command">Rpm/Find</strong></span> ,або натиснути кнопку <span><strong class="command">Find</strong></span> на панелі інструментів. В полі вводу вводите ім'я пакунка або файлу потім необхідно вибрати тип: що потрібно знайти пакунок, чи файл у пакунку, і натиснути кнопку <span><strong class="command">Find</strong></span>. Також доступні опції: абсолютне співпадання, з урахуванням регістру; пошук у: назві, описі, підсумку.</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="manager_src"></a>4.5. Менеджер джерел.</h4></div></div></div>
+<p>
+					Tут ви можете виконувати різноманітні операції із джерелами. Джерело це місце (тека, cd, dvd) де знаходяться rpm пакунки. Доступні наступні операції додавання, видалення, редагування, поновлення.
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li>
+<span><strong class="command">Add</strong></span> – додавання нового джерела.
+						</li>
+<li>
+<span><strong class="command">Remove</strong></span> – видалення існуючого джерела.
+						</li>
+<li>
+<span><strong class="command">Edit</strong></span> – зміна назви існуючого джерела, або шляху де воно знаходиться.
+						</li>
+<li>
+<span><strong class="command">Update</strong></span> – якщо ви до джерела (наприклад, каталогу ) додали нові пакунки або видалили то про це потрібно повідомити менеджер джерел, вибравши потрібне джерело і натиснувши кнопку поновити.
+						</li>
+</ul></div>
+<p>
+					Щоб зберегти інформацію про додані, видалені чи поновлені джерела натисніть кнопку <span><strong class="command">Save</strong></span>, якщо ж ні - <span><strong class="command">Discard</strong></span>.
+				</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498705"></a>4.6. Майстер додавання та редагування джерела</h4></div></div></div>
+<p>Введіть назву джерела (вибираєте на власний розсуд), опція <span><strong class="command">CD/DVD</strong></span>вказує на те що дане джерело є  CD/DVD диском. В <span><strong class="command">path source</strong></span> вказуєте де знаходяться пакунки. Натискаєте кнопку <span><strong class="command">next</strong></span> щоб почати процес додавання. Дані про додані джерела збираються у файлі <code class="filename">SCT/share/rpm/heder.xml</code>.</p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="sct_dm.html"><img src="../images/prev.png" alt="назад"></a> </td>
+<td width="20%" align="center"><a accesskey="u" href="sct_lilo.html"><img src="../images/up.png" alt="Догори"></a></td>
+<td width="40%" align="right"> <a accesskey="n" href="pr03.html"><img src="../images/next.png" alt="далі"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">3. Опис модуля SCT dm </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="../images/home.png" alt="Початок"></a></td>
+<td width="40%" align="right" valign="top"> Автори.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

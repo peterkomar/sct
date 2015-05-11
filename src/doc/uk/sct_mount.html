@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>2. Опис модуля SCT mount</title>
+<link rel="stylesheet" href="../images/book.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.1">
+<link rel="start" href="index.html" title="Посібник користувача SCT">
+<link rel="up" href="sct_lilo.html" title="Розділ 2. Опис модулів">
+<link rel="prev" href="sct_lilo.html" title="Розділ 2. Опис модулів">
+<link rel="next" href="sct_dm.html" title="3. Опис модуля SCT dm">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">2.  Опис модуля SCT mount</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="sct_lilo.html"><img src="../images/prev.png" alt="назад"></a> </td>
+<th width="60%" align="center">Розділ 2.  Опис модулів </th>
+<td width="20%" align="right"> <a accesskey="n" href="sct_dm.html"><img src="../images/next.png" alt="далі"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="sct_mount"></a>2.  Опис модуля SCT mount</h3></div></div></div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497959"></a>2.1. Коротко</h4></div></div></div>
+<p>Утиліта є графічною надбудовою команди mount. Призначення кнопок: <span><strong class="command">Mount</strong></span> - монтує вибраний розділ. <span><strong class="command">Umount</strong></span> – розмонтовує вибраний розділ. <span><strong class="command">Scan</strong></span> - служить для виявлення нових розділів наприклад USB Flash Disk.</p>
+<div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Important">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Важливо]" src="../images/important.png"></td>
+<th align="left">Важливо</th>
+</tr>
+<tr><td align="left" valign="top">Для того щоб розділи автоматично підключались із заданими вами параметрами при завантаженні системи необхідно включити режим запису у файл <code class="filename">fstab</code> <span><strong class="command">Data/Write to fstab</strong></span>. До включення цього режиму інформація про монтування розділів у файл <code class="filename">/etc/fstab</code> не записується. (Рекомендується створити резервну копію файлу <code class="filename">/etc/fstab</code>).</td></tr>
+</table></div>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498016"></a>2.2. Робота у звичайному режимі</h4></div></div></div>
+<p>Щоб змонтувати розділ необхідно вибрати його і натиснути кнопку <span><strong class="command">Mount</strong></span>, або скористатись контекстно залежним меню і програма автоматично визначить параметри і підключить вибраний розділ і покаже інформацію куди було підключено заданий розділ. Аналогічно здійснюється розмонтування розділу виконанням команди <span><strong class="command">Umount</strong></span>. Якщо вам потрібний більший контроль над монтуванням розділу переключіться в режим експерта <span><strong class="command">View\Expert</strong></span>. 
+					Кнопка <span><strong class="command">Scan</strong></span> призначена для виявлення нових розділів, які були підключені до комп’ютера уже після запуску програми. (Приклад: USB флеш диск тощо).</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2498067"></a>2.3. Робота у режимі експерта.</h4></div></div></div>
+<p>
+					В режимі експерта ви зможете в ручну задавати параметри монтування. Цей режим підходить більш досвідченим користувачам, яким відомо іменування жорстких дисків у Linux системах і їм відомі параметри підключення розділів. Для тих користувачі, кому невідомі параметри монтування доступна система підказок достатньо навести курсор мишки у вікні монтування на параметр, який вас цікавить. Монтування, розмонтування, сканування проводиться аналогічно до того як це робиться в звичайному режимі.
+				</p>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="sct_lilo.html"><img src="../images/prev.png" alt="назад"></a> </td>
+<td width="20%" align="center"><a accesskey="u" href="sct_lilo.html"><img src="../images/up.png" alt="Догори"></a></td>
+<td width="40%" align="right"> <a accesskey="n" href="sct_dm.html"><img src="../images/next.png" alt="далі"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Розділ 2.  Опис модулів  </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="../images/home.png" alt="Початок"></a></td>
+<td width="40%" align="right" valign="top"> 3. Опис модуля SCT dm</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>SelectMode</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SelectMode</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>235</width>
+            <height>100</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>235</width>
+            <height>100</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>235</width>
+            <height>100</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Unmount parameter</string>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>CloseBtn</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>65</y>
+                <width>104</width>
+                <height>24</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>FinishBtn</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>121</x>
+                <y>65</y>
+                <width>103</width>
+                <height>24</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Finish</string>
+        </property>
+    </widget>
+    <widget class="QCheckBox">
+        <property name="name">
+            <cstring>checkForce</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>20</y>
+                <width>213</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Force</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Force unmount</string>
+        </property>
+        <property name="whatsThis" stdset="0">
+            <string>Force unmount.</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>CloseBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>SelectMode</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>FinishBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>SelectMode</receiver>
+        <slot>slotFinish()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>slotFinish()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

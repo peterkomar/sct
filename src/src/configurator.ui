@@ -1,0 +1,1555 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>configurator</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>configurator</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>574</width>
+            <height>355</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Configurator</string>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>okBtn</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>30</x>
+                <y>310</y>
+                <width>190</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Aply</string>
+        </property>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>closeBtn</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>331</x>
+                <y>310</y>
+                <width>210</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+    </widget>
+    <widget class="QTabWidget">
+        <property name="name">
+            <cstring>tabWidget3</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>550</width>
+                <height>290</height>
+            </rect>
+        </property>
+        <property name="tabPosition">
+            <enum>Bottom</enum>
+        </property>
+        <property name="tabShape">
+            <enum>Rounded</enum>
+        </property>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>bootMD</cstring>
+            </property>
+            <attribute name="title">
+                <string>&amp;Boot, Mount, Devices</string>
+            </attribute>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linekeyboard</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>80</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseSnd</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>30</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>Browsekeybrd</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>80</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseX</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>180</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseHW</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>130</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseMntDev</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>80</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linemount</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>80</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linesound</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>30</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>160</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config xserver</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineboot</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseBoot</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>30</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linexserver</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>180</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linehwinfo</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>130</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineprinter</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>130</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowsePrinter</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>491</x>
+                        <y>130</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseMose</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>180</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_4_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>9</x>
+                        <y>210</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config scaner</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseScaner</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>230</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linemouse</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>269</x>
+                        <y>180</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>60</y>
+                        <width>250</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config mount devices</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>110</y>
+                        <width>210</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program info Hardware</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_9</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>10</y>
+                        <width>230</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config soundcart</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_10</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>60</y>
+                        <width>210</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config keyboard</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>110</y>
+                        <width>210</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config printer</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>269</x>
+                        <y>160</y>
+                        <width>200</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config mouse</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>220</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program boot config</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linescaner</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>9</x>
+                        <y>230</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>netpack</cstring>
+            </property>
+            <attribute name="title">
+                <string>Networ&amp;k, Packages</string>
+            </attribute>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineftp</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>80</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowsePkgs</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>30</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineApache</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>130</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseMAil</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>491</x>
+                        <y>130</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>Browseftp</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>80</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linenfs</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>30</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseNet</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>80</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>Browsenfs</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>30</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linenetw</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>80</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>Browsesmb</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>180</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>Browseapache</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>130</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linemail</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>130</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linesmb</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>180</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linepkgs</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linedns</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>269</x>
+                        <y>180</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseDNS</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>180</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineDHCP</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>9</x>
+                        <y>230</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseDHCP</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>230</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineproxy</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>269</x>
+                        <y>230</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseProxy</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>230</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_5</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>230</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Packages</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_2_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>60</y>
+                        <width>210</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config network</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_4_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>160</y>
+                        <width>210</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Samba</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_4_4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>9</x>
+                        <y>210</y>
+                        <width>200</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config DHCP</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_3_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>110</y>
+                        <width>230</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Web Server</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_9_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>10</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config NFS</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_10_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>60</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config FTP</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>110</y>
+                        <width>180</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Mail</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_4_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>269</x>
+                        <y>160</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config DNS</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_4_5</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>269</x>
+                        <y>210</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Proxy</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>system</cstring>
+            </property>
+            <attribute name="title">
+                <string>System</string>
+            </attribute>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_2_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>70</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Date</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>190</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Users</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseRoot</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>90</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineuser</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>40</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseUser</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>40</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineroot</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>90</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_11_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>120</y>
+                        <width>200</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Security</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineservic</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>40</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linedata</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>90</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineSecur</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>140</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseSecur</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>491</x>
+                        <y>140</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseDate</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>90</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseServ</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>490</x>
+                        <y>40</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_10_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>70</y>
+                        <width>250</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Root password</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_9_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>270</x>
+                        <y>20</y>
+                        <width>240</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Services</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_3_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>120</y>
+                        <width>180</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program view Syslog</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>linesyslog</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>140</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseSyslog</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>140</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineLang</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>190</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>BrowseLang</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>230</x>
+                        <y>190</y>
+                        <width>30</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>...</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>170</y>
+                        <width>240</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Path to program config Laguange</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget">
+            <property name="name">
+                <cstring>other</cstring>
+            </property>
+            <attribute name="title">
+                <string>Other</string>
+            </attribute>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>DeskBtn</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>20</y>
+                        <width>510</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Add icon program in desktop (current user only)</string>
+                </property>
+            </widget>
+            <widget class="QPushButton">
+                <property name="name">
+                    <cstring>MenuBtn</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>60</y>
+                        <width>510</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Add icon program in menu (current user only)</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_7</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>229</x>
+                        <y>148</y>
+                        <width>90</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Language</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <property name="name">
+                    <cstring>langBox</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>338</x>
+                        <y>148</y>
+                        <width>130</width>
+                        <height>24</height>
+                    </rect>
+                </property>
+            </widget>
+        </widget>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>closeBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseBoot</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBrwsBoot()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseMntDev</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBMount()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseHW</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBHwrInfo()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseX</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBXSrv()</slot>
+    </connection>
+    <connection>
+        <sender>Browseapache</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBApache()</slot>
+    </connection>
+    <connection>
+        <sender>Browseftp</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBFTP()</slot>
+    </connection>
+    <connection>
+        <sender>Browsekeybrd</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBKeyB()</slot>
+    </connection>
+    <connection>
+        <sender>Browsenfs</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBNFS()</slot>
+    </connection>
+    <connection>
+        <sender>Browsesmb</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBSamba()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseUser</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBUser()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseSyslog</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBSyslog()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseSnd</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBSound()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseSecur</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBSecurity()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseRoot</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBRoot()</slot>
+    </connection>
+    <connection>
+        <sender>BrowsePrinter</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBPrinter()</slot>
+    </connection>
+    <connection>
+        <sender>BrowsePkgs</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBPackage()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseNet</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBNetwork()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseMAil</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBMail()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseDate</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBDate()</slot>
+    </connection>
+    <connection>
+        <sender>okBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotAply()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseDHCP</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotDHCP()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseDNS</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotDNS()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseMose</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotMouse()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseProxy</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotProxy()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseScaner</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotScaner()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseServ</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBServices()</slot>
+    </connection>
+    <connection>
+        <sender>DeskBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotAddDesktop()</slot>
+    </connection>
+    <connection>
+        <sender>MenuBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotAddSysMenu()</slot>
+    </connection>
+    <connection>
+        <sender>BrowseLang</sender>
+        <signal>clicked()</signal>
+        <receiver>configurator</receiver>
+        <slot>slotBLang()</slot>
+    </connection>
+    <connection>
+        <sender>langBox</sender>
+        <signal>activated(const QString&amp;)</signal>
+        <receiver>configurator</receiver>
+        <slot>langChange(const QString&amp;)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>slotBrwsBoot()</slot>
+    <slot>slotBMount()</slot>
+    <slot>slotBHwrInfo()</slot>
+    <slot>slotBXSrv()</slot>
+    <slot>slotBSound()</slot>
+    <slot>slotBKeyB()</slot>
+    <slot>slotBPrinter()</slot>
+    <slot>slotBPackage()</slot>
+    <slot>slotBNetwork()</slot>
+    <slot>slotBApache()</slot>
+    <slot>slotBSamba()</slot>
+    <slot>slotBNFS()</slot>
+    <slot>slotBFTP()</slot>
+    <slot>slotBMail()</slot>
+    <slot>slotBUser()</slot>
+    <slot>slotBDate()</slot>
+    <slot>slotBSyslog()</slot>
+    <slot>slotBServices()</slot>
+    <slot>slotBRoot()</slot>
+    <slot>slotBSecurity()</slot>
+    <slot>slotAply()</slot>
+    <slot>slotDHCP()</slot>
+    <slot>slotDNS()</slot>
+    <slot>slotMouse()</slot>
+    <slot>slotScaner()</slot>
+    <slot>slotProxy()</slot>
+    <slot>slotAddDesktop()</slot>
+    <slot>slotAddSysMenu()</slot>
+    <slot>slotBLang()</slot>
+    <slot>langChange(const QString&amp; )</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

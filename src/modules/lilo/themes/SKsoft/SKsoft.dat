@@ -1,0 +1,4 @@
+bitmap = /boot/SKsoft.bmp
+bmp-colors = 5,,239,239,,5
+bmp-table = 128p,313p,1,4
+bmp-timer = none

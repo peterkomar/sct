@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>Chapter 2.  Description of the modules</title>
+<link rel="stylesheet" href="../images/book.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.1">
+<link rel="start" href="index.html" title="SCT user guide">
+<link rel="up" href="index.html" title="SCT user guide">
+<link rel="prev" href="ch01.html" title="Chapter 1.  Work with the program SCT control center">
+<link rel="next" href="sct_mount.html" title="2.  Description the module of SCT mount">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Chapter 2.  Description of the modules</th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01.html"><img src="../images/prev.png" alt="Prev"></a> </td>
+<th width="60%" align="center"> </th>
+<td width="20%" align="right"> <a accesskey="n" href="sct_mount.html"><img src="../images/next.png" alt="Next"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="chapter" lang="en">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="sct_lilo"></a>Chapter 2.  Description of the modules</h2></div></div></div>
+<div class="toc">
+<p><b>Table of Contents</b></p>
+<dl>
+<dt><span class="section"><a href="sct_lilo.html#id2497592">1.  Description of the module of SCT lilo</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="sct_lilo.html#id2497598">1.1. Enter parameters lilo loader</a></span></dt>
+<dt><span class="section"><a href="sct_lilo.html#id2497757">1.2. Set background image</a></span></dt>
+<dt><span class="section"><a href="sct_lilo.html#id2497770">1.3. Set oters background images</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="sct_mount.html">2.  Description the module of SCT mount</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="sct_mount.html#id2497825">2.1. Short</a></span></dt>
+<dt><span class="section"><a href="sct_mount.html#id2497870">2.2. Work in standart mode</a></span></dt>
+<dt><span class="section"><a href="sct_mount.html#id2497902">2.3. Work in the mode of expert.</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="sct_dm.html">3. Description module of SCT dm</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html">4.  Description of the module of SCT rpm</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="sct_rpm.html#id2497970">4.1. Short</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2497980">4.2. Description of SCT rpm.</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498090">4.3. Set and delete of packages.</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498189">4.4. Find packages</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498215">4.5. Source manages.</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498265">4.6. Wizard addition and editing of source</a></span></dt>
+</dl></dd>
+</dl>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2497592"></a>1.  Description of the module of SCT lilo</h3></div></div></div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497598"></a>1.1. Enter parameters lilo loader</h4></div></div></div>
+<p>
+					Accessible next parameters for the change of <span><strong class="command">device boot</strong></span> – a device allows to specify where a loader will be set, <span><strong class="command">pause</strong></span> -- time is fixed which the list of the operating systems will be represented during. If to set the small flag of <span><strong class="command">disable Timer</strong></span> then a timer in general will not be represented in a menu and the system will expect while an user will not choose the operating system from a list. On the inset of <span><strong class="command">boot menu config</strong></span> it is possible to edit exactly the menu of load: to add the new operating systems, remove existing. It is possible to add the operating systems of two kinds:
+					</p>
+<div class="orderedlist"><ol type="1">
+<li><p>
+					          1. Linux.
+					        </p></li>
+<li><p>
+					          2. Other (Windows)
+					         </p></li>
+</ol></div>
+<p>
+					At the choice of Linux there will be the accessible followings fields for filling:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					Label – the name of the operating system is specified under which she will be represented in the menu of load.
+				                </p></li>
+<li><p>
+					Image – appearance of kernel of Linux is specified.
+				                </p></li>
+<li><p>
+					Root – a section is specified where Linux is.
+				                </p></li>
+<li><p>
+					Add -- here entered additional parameters of lilofor those who acquaintance with the syntax of file of lilo.conf Add weeds the analogue of append.
+				                </p></li>
+<li><p>
+					Video is a choice of video of the mode for the load of Linux.
+				                </p></li>
+<li><p>
+					Initrd – a file is here specified initrd* file of kernel.
+				                </p></li>
+</ul></div>
+<p>
+			                At the choice of Linux there will be the accessible followings 
+fields for filling:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					Label – the name of the operating system is specified under which she will be 
+represented in the menu of load.
+				                </p></li>
+<li><p>
+					Root – a section is specified where the operating system is.
+				                </p></li>
+</ul></div>
+<p>
+					For deleting the operating system from a list it is enough to choose her in a list and push the button of <span><strong class="command">delete</strong></span>. The button of <span><strong class="command">edit</strong></span> edits an already existent menu item. The choice of <span><strong class="command">set default</strong></span> allows to set a tu operating-room system which will be loaded on saying nothing. After establishment of necessary parameters of instruction <span><strong class="command">lilo/set parameters</strong></span> execution will involve changes. In a new window information will be represented about application of parameters of error will be represented a red color.
+
+				</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497757"></a>1.2. Set background image</h4></div></div></div>
+<p>
+					For establishment of background picture it is enough to pass to the inset of <span><strong class="command">themes</strong></span> and choose a picture.
+				</p>
+</div>
+<div class="section" lang="en">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497770"></a>1.3. Set oters background images</h4></div></div></div>
+<p>
+					For those who wants to insert an own background picture, it is necessary to convert before tim in 8 bit a bmp picture with settling ability 640х480 in some the editor (for example GIMP) and to create the file of data for this picture. Example: let you want to create background image mytheme: for this purpose you in the catalogue of the <code class="filename">SCT/share/lilo/themes</code> program SCT create the catalogue of mytheme in this catalogue create the picture with the name of <code class="filename">mytheme.bmp</code> 
+and file of <code class="filename">mytheme.dat</code>.
+					Example of file of <code class="filename">mytheme.dat</code>.
+					</p>
+<pre class="programlisting">
+					bitmap=/boot/mytheme.bmp
+					bmp-colors=,,53,15,,25
+					bmp-table=45p,57p,1,7
+					bmp-timer=535p,17p,7,0,5
+				</pre>
+<p>
+			As see the name of folder and files that in her, guilty to coincide. And in relation to interpretation of numbers apply in the section of <span><strong class="command">man lilo.conf</strong></span>.
+				</p>
+</div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01.html"><img src="../images/prev.png" alt="Prev"></a> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right"> <a accesskey="n" href="sct_mount.html"><img src="../images/next.png" alt="Next"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Chapter 1.  Work with the program SCT control center  </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="../images/home.png" alt="Home"></a></td>
+<td width="40%" align="right" valign="top"> 2.  Description the module of SCT mount</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

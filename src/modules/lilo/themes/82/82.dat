@@ -1,0 +1,4 @@
+bitmap=/boot/82.bmp
+bmp-colors=,,53,15,,25
+bmp-table=111p,205p,1,7
+bmp-timer=438p,369p,15,115,15

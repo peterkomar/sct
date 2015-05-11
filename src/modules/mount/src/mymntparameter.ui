@@ -1,0 +1,798 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>editMount</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>editMount</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>502</width>
+            <height>455</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>32767</width>
+            <height>32767</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Mount Parameter</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QPushButton" row="2" column="0">
+            <property name="name">
+                <cstring>CloseBtn</cstring>
+            </property>
+            <property name="text">
+                <string>Close</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="2" column="1">
+            <property name="name">
+                <cstring>FinishBtn</cstring>
+            </property>
+            <property name="text">
+                <string>Finish</string>
+            </property>
+        </widget>
+        <widget class="QGroupBox" row="0" column="1">
+            <property name="name">
+                <cstring>groupBox3</cstring>
+            </property>
+            <property name="title">
+                <string>Information</string>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>80</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Size :</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>50</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Type :</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel1</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Partition :</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>nameSize</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>80</y>
+                        <width>120</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>3</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>nameType</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>50</y>
+                        <width>120</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>2</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>namePart</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>110</x>
+                        <y>20</y>
+                        <width>120</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>1</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" row="0" column="0">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="title">
+                <string>Mount</string>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>110</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Mount Point</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel5</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>90</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Type FS</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <item>
+                    <property name="text">
+                        <string>/mnt/C</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>/mnt/D</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>/mnt/F</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>/mnt/E</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>/mnt/G</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>/mnt/Linux1</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>/mnt/Linux2</string>
+                    </property>
+                </item>
+                <property name="name">
+                    <cstring>selectMP</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>30</y>
+                        <width>90</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="editable">
+                    <bool>true</bool>
+                </property>
+                <property name="currentItem">
+                    <number>0</number>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Mount point</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>Mount point</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <item>
+                    <property name="text">
+                        <string>vfat</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>ext3</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>ext2</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>swap</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>ntfs</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>reiserfs</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>auto</string>
+                    </property>
+                </item>
+                <property name="name">
+                    <cstring>selectType</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>130</x>
+                        <y>90</y>
+                        <width>60</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="editable">
+                    <bool>true</bool>
+                </property>
+                <property name="currentItem">
+                    <number>6</number>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>type file systen (vfat, ext3, auto,...)</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>type file systen (vfat, ext3, auto,...)</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>groupBox2</cstring>
+            </property>
+            <property name="title">
+                <string>Mount parameter</string>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>90</y>
+                        <width>62</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>noatime</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_8</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>160</y>
+                        <width>62</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>ro</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>iocharset =</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_6</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>120</y>
+                        <width>70</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>codepage</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_3</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>60</y>
+                        <width>40</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>sync</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>190</y>
+                        <width>180</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Arbitrary options value:</string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>Enter other parameter </string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_5</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>60</y>
+                        <width>90</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>umask=0002</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_11</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>120</y>
+                        <width>62</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>noexec</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_4</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>90</y>
+                        <width>62</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>users</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_12</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>150</y>
+                        <width>62</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>nodev</string>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>textLabel2_9</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>30</y>
+                        <width>62</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>nosuid</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <item>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>koi8-u</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>koi8-r</string>
+                    </property>
+                </item>
+                <item>
+                    <property name="text">
+                        <string>utf8</string>
+                    </property>
+                </item>
+                <property name="name">
+                    <cstring>editCharSet</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>30</y>
+                        <width>140</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="editable">
+                    <bool>true</bool>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>char set in partition (koi8-u, utf8, ...)</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>char set in partition (koi8-u, utf8, ...)</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkSync</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>60</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="autoRepeat">
+                    <bool>false</bool>
+                </property>
+                <property name="tristate">
+                    <bool>false</bool>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;All operations i/o filesystem must be run synchronously</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;All operations i/o filesystem must be run synchronously</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkNoatime</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>90</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Do  not  update  inode  access  times on this file system
+(e.g, for faster access on the news  spool  to  speed  up
+news servers)&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Do  not  update  inode  access  times on this file system
+(e.g, for faster access on the news  spool  to  speed  up
+news servers)&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QComboBox">
+                <item>
+                    <property name="text">
+                        <string>866</string>
+                    </property>
+                </item>
+                <property name="name">
+                    <cstring>editCodePage</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>120</y>
+                        <width>140</width>
+                        <height>28</height>
+                    </rect>
+                </property>
+                <property name="editable">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>editOther</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>220</y>
+                        <width>450</width>
+                        <height>23</height>
+                    </rect>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;(Other mount parameter ex.( gid=users,utf8=true,noauto)&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;(Other mount parameter ex.( gid=users,utf8=true,noauto)&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkNoSuid</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>420</x>
+                        <y>30</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Do not allow set-user-identifier or  set-group-identifier
+bits  to  take  effect.  (This seems safe, but is in fact
+rather unsafe if you have suidperl(1) installed.)&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Do not allow set-user-identifier or  set-group-identifier
+bits  to  take  effect.  (This seems safe, but is in fact
+rather unsafe if you have suidperl(1) installed.)&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkUmask22</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>420</x>
+                        <y>60</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Enable write for users&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Enable write for users&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkUser</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>420</x>
+                        <y>90</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Enable users mount and unmount this partition&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Enable users mount and unmount this partition&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkNoExec</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>420</x>
+                        <y>120</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Disable run binary files in mounted partition&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Disable run binary files in mounted partition&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkNodev</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>420</x>
+                        <y>150</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Do  not  interpret character or block special devices on
+the file system.&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Do  not  interpret character or block special devices on
+the file system.&lt;/i&gt;</string>
+                </property>
+            </widget>
+            <widget class="QCheckBox">
+                <property name="name">
+                    <cstring>checkRo</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>100</x>
+                        <y>160</y>
+                        <width>16</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="toolTip" stdset="0">
+                    <string>&lt;i&gt;Mount the file system read-only&lt;/i&gt;</string>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>&lt;i&gt;Mount the file system read-only&lt;/i&gt;</string>
+                </property>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>CloseBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>editMount</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>FinishBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>editMount</receiver>
+        <slot>slotFinish()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>slotFinish()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

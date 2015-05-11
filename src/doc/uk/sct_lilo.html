@@ -1,0 +1,156 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>Розділ 2. Опис модулів</title>
+<link rel="stylesheet" href="../images/book.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.71.1">
+<link rel="start" href="index.html" title="Посібник користувача SCT">
+<link rel="up" href="index.html" title="Посібник користувача SCT">
+<link rel="prev" href="ch01.html" title="Розділ 1. Робота із програмою SCT control center">
+<link rel="next" href="sct_mount.html" title="2. Опис модуля SCT mount">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr><th colspan="3" align="center">Розділ 2.  Опис модулів </th></tr>
+<tr>
+<td width="20%" align="left">
+<a accesskey="p" href="ch01.html"><img src="../images/prev.png" alt="назад"></a> </td>
+<th width="60%" align="center"> </th>
+<td width="20%" align="right"> <a accesskey="n" href="sct_mount.html"><img src="../images/next.png" alt="далі"></a>
+</td>
+</tr>
+</table>
+<hr>
+</div>
+<div class="chapter" lang="uk">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="sct_lilo"></a>Розділ 2.  Опис модулів </h2></div></div></div>
+<div class="toc">
+<p><b>Зміст</b></p>
+<dl>
+<dt><span class="section"><a href="sct_lilo.html#id2497651">1.  Опис модуля SCT lilo</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="sct_lilo.html#id2497657">1.1. Введення параметрів завантажувача lilo</a></span></dt>
+<dt><span class="section"><a href="sct_lilo.html#id2497877">1.2. Встановлення фонового малюнка</a></span></dt>
+<dt><span class="section"><a href="sct_lilo.html#id2497895">1.3. Встановлення власного фонового малюнка</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="sct_mount.html">2.  Опис модуля SCT mount</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="sct_mount.html#id2497959">2.1. Коротко</a></span></dt>
+<dt><span class="section"><a href="sct_mount.html#id2498016">2.2. Робота у звичайному режимі</a></span></dt>
+<dt><span class="section"><a href="sct_mount.html#id2498067">2.3. Робота у режимі експерта.</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="sct_dm.html">3. Опис модуля SCT dm</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html">4.  Опис модуля SCT rpm</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="sct_rpm.html#id2498165">4.1. Коротко</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498177">4.2. Опис SCT rpm.</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498311">4.3. Встановлення та видалення пакунків.</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2496707">4.4. Пошук пакунків</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#manager_src">4.5. Менеджер джерел.</a></span></dt>
+<dt><span class="section"><a href="sct_rpm.html#id2498705">4.6. Майстер додавання та редагування джерела</a></span></dt>
+</dl></dd>
+</dl>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id2497651"></a>1.  Опис модуля SCT lilo</h3></div></div></div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497657"></a>1.1. Введення параметрів завантажувача lilo</h4></div></div></div>
+<p>
+					Доступні наступні параметри для зміни <span><strong class="command">Device boot</strong></span> – дозволяє вказати пристрій куди буде встановлено завантажувач, <span><strong class="command">Pause</strong></span> -- встановлюється час протягом якого буде відображатись список операційних систем. Якщо встановити прапорець <span><strong class="command">disable Timer</strong></span> тоді таймер взагалі не буде відображатись в меню і система буде чекати поки користувач сам не вибере операційну систему із списку. На вкладці <span><strong class="command">Boot menu config</strong></span> можна редагувати саме меню завантаження: добавляти нові операційні системи, видаляти існуючі. Можна добавляти операційні системи двох видів:
+					</p>
+<div class="orderedlist"><ol type="1">
+<li><p>
+					          1. Лінукс.
+					        </p></li>
+<li><p>
+					          2. Other (Windows)
+					         </p></li>
+</ol></div>
+<p>
+					При виборі Linux будуть доступні наступні поля для заповнення:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					Label – вказується ім’я операційної системи під яким вона буде відображатись у меню завантаження.
+				                </p></li>
+<li><p>
+					Image – вказується образ ядра Linux.
+				                </p></li>
+<li><p>
+					Root – вказується розділ де знаходиться Linux.
+				                </p></li>
+<li><p>
+					Аdd -- тут вводиться додаткові параметри lilo, для тих хто знайомий із синтаксисом файлу lilo.conf поле Аdd аналог append.
+				                </p></li>
+<li><p>
+					Video – вибір відео режиму для завантаження Linux.
+				                </p></li>
+<li><p>
+					Initrd – тут вказується файл initrd* файл ядра.
+				                </p></li>
+</ul></div>
+<p>
+			                При виборі Linux будуть доступні наступні поля для заповнення:
+					</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					Label – вказується ім’я операційної системи під яким вона буде відображатись у меню завантаження.
+				                </p></li>
+<li><p>
+					Root – вказується розділ де знаходиться операційна система.
+				                </p></li>
+</ul></div>
+<p>
+					Для видалення операційної системи із списку достатньо вибрати її в списку і натиснути кнопку <span><strong class="command">Delete</strong></span>. Кнопка <span><strong class="command">Edit</strong></span> редагує уже існуючий пункт меню. Вибір <span><strong class="command">set default</strong></span> дозволяє встановити ту операційну систему, яка буде завантажуватись по замовчуванню. Після встановлення потрібних параметрів виконання команди <span><strong class="command">Lilo/Set parameters</strong></span> задіє зміни. В новому вікні буде відображатись інформація про застосування параметрів помилки будуть відображатись червоним кольором.
+
+				</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497877"></a>1.2. Встановлення фонового малюнка</h4></div></div></div>
+<p>
+					Для встановлення фонового малюнка достатньо перейти на вкладку <span><strong class="command">Themes</strong></span> і вибрати малюнок.
+				</p>
+</div>
+<div class="section" lang="uk">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="id2497895"></a>1.3. Встановлення власного фонового малюнка</h4></div></div></div>
+<p>
+					Для тих хто хоче вставити власний фоновий малюнок, необхідно конвертувати перед тим у 8 бітний bmp малюнок із роздільною здатністю 640х480 у якомусь графічному редакторі (наприклад GIMP) і створити файл даних для цього малюнка. Приклад: нехай ви хочете створити фонову завставку myTheme: для цього ви у каталозі <code class="filename">themes</code> програми SCT створюєте каталог myTheme у цьому каталозі створюєте свій малюнок із назвою <code class="filename">myTheme.bmp</code> і файл <code class="filename">myTheme.dat</code>.
+					Приклад файлу <code class="filename">myTheme.dat</code>.
+					</p>
+<pre class="programlisting">
+					bitmap=/boot/myTheme.bmp
+					bmp-colors=,,53,15,,25
+					bmp-table=45p,57p,1,7
+					bmp-timer=535p,17p,7,0,5
+				</pre>
+<p>
+			Як бачите ім’я папки і файлів що у ній, повинні співпадати. А щодо тлумачення цифр звертайтесь у розділ <span><strong class="command">man lilo.conf</strong></span>.
+				</p>
+</div>
+</div>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left">
+<a accesskey="p" href="ch01.html"><img src="../images/prev.png" alt="назад"></a> </td>
+<td width="20%" align="center"> </td>
+<td width="40%" align="right"> <a accesskey="n" href="sct_mount.html"><img src="../images/next.png" alt="далі"></a>
+</td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">Розділ 1.  Робота із програмою SCT control center  </td>
+<td width="20%" align="center"><a accesskey="h" href="index.html"><img src="../images/home.png" alt="Початок"></a></td>
+<td width="40%" align="right" valign="top"> 2.  Опис модуля SCT mount</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

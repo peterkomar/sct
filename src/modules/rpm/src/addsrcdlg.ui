@@ -1,0 +1,244 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>AddSrcdlg</class>
+<widget class="QWizard">
+    <property name="name">
+        <cstring>AddSrcdlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Add Wizard new source</string>
+    </property>
+    <widget class="QWidget">
+        <property name="name">
+            <cstring>firstPage</cstring>
+        </property>
+        <attribute name="title">
+            <string>&lt;b&gt;First step&lt;/b&gt;</string>
+        </attribute>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <spacer row="1" column="1">
+                <property name="name">
+                    <cstring>spacer12</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Vertical</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>20</width>
+                        <height>239</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QLayoutWidget" row="0" column="1">
+                <property name="name">
+                    <cstring>layout16</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout9</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Name source:</string>
+                                </property>
+                            </widget>
+                            <spacer row="0" column="1">
+                                <property name="name">
+                                    <cstring>spacer10</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>200</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLineEdit" row="1" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>nameEdit</cstring>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QCheckBox">
+                        <property name="name">
+                            <cstring>checkCD</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;CD/DVD</string>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout11</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLineEdit" row="1" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>pathEdit</cstring>
+                                </property>
+                            </widget>
+                            <spacer row="0" column="1">
+                                <property name="name">
+                                    <cstring>spacer11</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>180</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton" row="1" column="2">
+                                <property name="name">
+                                    <cstring>selectBtn</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>...</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Source path:</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                </vbox>
+            </widget>
+            <widget class="QTextEdit" row="0" column="0" rowspan="2" colspan="1">
+                <property name="name">
+                    <cstring>helpTxt</cstring>
+                </property>
+                <property name="minimumSize">
+                    <size>
+                        <width>250</width>
+                        <height>0</height>
+                    </size>
+                </property>
+                <property name="maximumSize">
+                    <size>
+                        <width>250</width>
+                        <height>32767</height>
+                    </size>
+                </property>
+                <property name="focusPolicy">
+                    <enum>NoFocus</enum>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+        </grid>
+    </widget>
+    <widget class="QWidget">
+        <property name="name">
+            <cstring>finishPage</cstring>
+        </property>
+        <attribute name="title">
+            <string>&lt;b&gt;Added source&lt;/b&gt;</string>
+        </attribute>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <spacer row="3" column="0">
+                <property name="name">
+                    <cstring>spacer13</cstring>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                    <enum>Expanding</enum>
+                </property>
+                <property name="sizeHint">
+                    <size>
+                        <width>530</width>
+                        <height>20</height>
+                    </size>
+                </property>
+            </spacer>
+            <widget class="QProgressBar" row="2" column="0">
+                <property name="name">
+                    <cstring>progressAdd</cstring>
+                </property>
+            </widget>
+            <widget class="QTextEdit" row="0" column="0">
+                <property name="name">
+                    <cstring>outAdd</cstring>
+                </property>
+                <property name="focusPolicy">
+                    <enum>NoFocus</enum>
+                </property>
+                <property name="readOnly">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" row="1" column="0">
+                <property name="name">
+                    <cstring>label</cstring>
+                </property>
+                <property name="alignment">
+                    <set>AlignVCenter|AlignRight</set>
+                </property>
+            </widget>
+        </grid>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>selectBtn</sender>
+        <signal>clicked()</signal>
+        <receiver>AddSrcdlg</receiver>
+        <slot>slotBrowse()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>slotBrowse()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
